@@ -1,0 +1,98 @@
+.maindiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imgpro {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  margin: 5px 0px 0px 75px;
+  border: solid;
+  color: white;
+}
+
+h3 {
+  text-align: center;
+}
+
+.space {
+  margin-top: 10px;
+}
+
+.imgdiv {
+  border-radius: 10px;
+  height: 390px;
+  width: 270px;
+  background-color: slategrey;
+  border: solid;
+  color: black;
+  margin: 10px;
+  -webkit-animation-name: color;
+          animation-name: color;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes color {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: darkorange;
+  }
+  50% {
+    background-color: gold;
+  }
+  100% {
+    background-color: yellowgreen;
+  }
+}
+
+@keyframes color {
+  0% {
+    background-color: red;
+  }
+  25% {
+    background-color: darkorange;
+  }
+  50% {
+    background-color: gold;
+  }
+  100% {
+    background-color: yellowgreen;
+  }
+}
+
+.imgdiv:hover {
+  color: aqua;
+  cursor: text;
+}
+
+.imgpro:hover {
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+  margin: 0%;
+  width: 270px;
+  height: 180px;
+}
+/*# sourceMappingURL=style.css.map */

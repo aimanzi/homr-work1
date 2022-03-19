@@ -1,0 +1,77 @@
+$imgstyle:100px;
+$cardborder1:270px;
+$cardborder2:390px;
+$borderradius:50px;
+$zoom1:270px;
+$zoom2:180px;
+$text:center;
+$color:aqua;
+
+.maindiv
+{
+ display: flex;
+ flex-direction:row;
+ flex-wrap:wrap;
+ justify-content: center;
+ align-items: center; 
+ 
+}
+
+.imgpro
+{
+    width: $imgstyle;
+    height:$imgstyle;
+    border-radius: $borderradius;
+    margin: 5px 0px 0px 75px;
+    border:solid;color: white;
+}
+
+h3{text-align: $text;}
+
+.space{margin-top: 10px;}
+
+.imgdiv
+{
+  border-radius: 10px;
+  height:$cardborder2;
+  width: $cardborder1;
+  background-color:slategrey;
+  border:solid;color: black;
+  margin: 10px;
+  animation-name: color;
+  animation-duration:5s;
+  animation-iteration-count: 2;
+ animation-direction: alternate; 
+ animation-delay: 2s;
+ }
+@keyframes color 
+{ 
+  0%{background-color: red;}
+  25%{background-color: darkorange;}
+  50%{background-color:gold;}
+  100%{background-color:yellowgreen;}
+}
+
+.imgdiv:hover
+{
+  color:$color;
+  cursor:text;
+}
+
+.imgpro:hover
+{
+  cursor:zoom-in;
+   margin: 0%;
+   width:$zoom1;
+   height:$zoom2;
+}
+
+  
+
+
+ 
+
+
+
+
+
